@@ -1,0 +1,25 @@
+import type { Config } from "tailwindcss"
+
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        navy: "#2c3e50",
+        gold: "#c9a227",
+        cream: "#f5f3ef",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "Lato", "sans-serif"],
+        serif: ["var(--font-serif)", "Playfair Display", "serif"],
+      },
+    },
+  },
+  plugins: [],
+}
+export default config
