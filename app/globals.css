@@ -39,7 +39,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Custom colors */
-  --navy: #2c3e50;
+  --navy: #1a2a3a;
   --gold: #c9a227;
   --cream: #f5f3ef;
 }
@@ -80,7 +80,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans), 'Lato', sans-serif;
+  --font-sans: var(--font-sans), 'Inter', sans-serif;
   --font-serif: var(--font-serif), 'Playfair Display', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-navy: var(--navy);
@@ -131,4 +131,105 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Section dividers */
+.section-divider {
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, var(--cream), transparent);
+  pointer-events: none;
+}
+
+/* Smooth shadows */
+.shadow-elegant {
+  box-shadow: 0 10px 40px -10px rgba(26, 42, 58, 0.15);
+}
+
+.shadow-elegant-lg {
+  box-shadow: 0 20px 60px -15px rgba(26, 42, 58, 0.2);
 }

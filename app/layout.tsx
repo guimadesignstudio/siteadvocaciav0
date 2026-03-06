@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Lato } from 'next/font/google'
+import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -9,9 +9,8 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-const lato = Lato({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  weight: ['300', '400', '700'],
   variable: '--font-sans',
   display: 'swap',
 });
@@ -46,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased`}>
+      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
