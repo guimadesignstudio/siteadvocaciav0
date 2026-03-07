@@ -50,7 +50,8 @@ export function Sobre() {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-navy/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
       
       <div className="container mx-auto px-4 lg:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        {/* AJUSTE 1: gap reduzido de 16 para 8 e centralização vertical (items-center) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           {/* Content */}
           <div className={`${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
             <div className="w-12 h-1 bg-navy mb-6" />
@@ -73,7 +74,7 @@ export function Sobre() {
               OAB/RJ 139.141 | OAB/SP 355.634
             </p>
 
-            {/* Features - Modern Icons with Shadow */}
+            {/* Features */}
             <div className={`flex flex-wrap gap-8 lg:gap-12 ${isVisible ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'}`}>
               {features.map((feature, index) => (
                 <div 
@@ -92,15 +93,14 @@ export function Sobre() {
 
           {/* Image and Quote */}
           <div className={`relative ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
-            {/* Photo with Quote Overlay */}
             <div className="relative">
-              {/* Main Photo */}
-              <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg max-w-xs mx-auto lg:mx-0 lg:ml-auto">
+              {/* AJUSTE 2: max-w aumentado para 'md' e removido 'lg:ml-auto' para aproximar do texto */}
+              <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg w-full max-w-md mx-auto lg:mx-0">
                 <Image
                   src="/images/dra-esttela.png"
                   alt="Dra. Esttela Guimarães - Advogada"
-                  width={320}
-                  height={400}
+                  width={600}
+                  height={750}
                   className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
                   priority
                 />
@@ -118,9 +118,9 @@ export function Sobre() {
                 </div>
               </div>
               
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border-2 border-gold/30 rounded-2xl -z-10" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gold/10 rounded-2xl -z-10" />
+              {/* AJUSTE 3: Molduras douradas aumentadas para acompanhar a foto maior */}
+              <div className="absolute -top-4 -right-4 w-32 h-32 border-2 border-gold/30 rounded-2xl -z-10" />
+              <div className="absolute -bottom-4 -left-4 w-40 h-40 bg-gold/10 rounded-2xl -z-10" />
             </div>
           </div>
         </div>
