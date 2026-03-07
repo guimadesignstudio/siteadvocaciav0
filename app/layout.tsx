@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
-import { Analytics } from '@vercel analytics/next'
+import { Analytics } from '@vercel/analytics/next'
 import { FloatingActions } from "@/components/floating-actions"
 import './globals.css'
 
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   description: 'Advocacia com excelência e dedicação. Atendimento jurídico personalizado em diversas áreas do direito.',
   generator: 'v0.app',
   icons: {
-    icon: '/icon.png', // Aponta para public/icon.png
-    apple: '/apple-icon.png', // Aponta para public/apple-icon.png
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
 }
 
