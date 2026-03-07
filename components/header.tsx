@@ -6,7 +6,7 @@ import Image from "next/image"
 import { Phone, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const WHATSAPP_LINK = "https://wa.me/5521990147026?text=Olá! Gostaria de agendar uma consulta."
+const WHATSAPP_LINK = "https://wa.me/5521981000527?text=Olá! Gostaria de agendar uma consulta."
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

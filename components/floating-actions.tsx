@@ -8,7 +8,7 @@ export function FloatingActions() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   // Link do WhatsApp com a mensagem personalizada
-  const WHATSAPP_LINK = "https://wa.me/5521990147026?text=Olá! Gostaria de agendar uma consulta."
+  const WHATSAPP_LINK = "https://wa.me/5521981000527?text=Olá! Gostaria de agendar uma consulta."
 
   useEffect(() => {
     const handleScroll = () => {

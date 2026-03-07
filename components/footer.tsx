@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Instagram, Mail, Phone } from "lucide-react"
 
-const WHATSAPP_LINK = "https://wa.me/5521990147026?text=Olá! Gostaria de agendar uma consulta."
+const WHATSAPP_LINK = "https://wa.me/5521981000527?text=Olá! Gostaria de agendar uma consulta."
 
 export function Footer() {
   return (
@@ -47,7 +47,7 @@ export function Footer() {
                 <div className="w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center transition-colors group-hover:bg-gold/10">
                   <Phone className="w-4 h-4 text-gold" />
                 </div>
-                (21) 99014-7026
+                (21) 98100-0527
               </Link>
               <Link
                 href="mailto:mesguimaraes.adv@gmail.com"

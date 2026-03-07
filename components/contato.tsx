@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 
-const WHATSAPP_NUMBER = "5521990147026"
+const WHATSAPP_NUMBER = "5521981000527"
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de agendar uma consulta.`
 
 const contactInfo = [
   {
     icon: Phone,
     title: "Telefone / WhatsApp",
-    value: "(21) 99014-7026",
+    value: "(21) 98100-0527",
   },
   {
     icon: Mail,

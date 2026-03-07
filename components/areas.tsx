@@ -162,7 +162,7 @@ function Modal({ area, isOpen, onClose }: { area: typeof areas[0] | null, isOpen
         </div>
         <div className="p-6 pt-0">
           <a
-            href="https://wa.me/5521990147026?text=Olá! Gostaria de saber mais sobre os serviços de advocacia."
+            href="https://wa.me/5521981000527?text=Olá! Gostaria de saber mais sobre os serviços de advocacia."
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-gold text-navy font-semibold py-3 rounded-lg text-center hover:bg-gold/90 transition-colors"
