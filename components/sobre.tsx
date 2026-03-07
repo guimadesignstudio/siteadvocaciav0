@@ -92,7 +92,7 @@ export function Sobre() {
             <div className="relative z-10">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg w-full max-w-md mx-auto lg:mx-0">
                 <Image
-                  src="/images/dra-esttela.png"
+                  src="/images/dra-esttela-nova.png"
                   alt="Dra. Esttela Guimarães - Advogada"
                   width={600}
                   height={750}
