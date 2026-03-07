@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { FloatingActions } from "@/components/floating-actions" // Importação do novo componente
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -47,6 +48,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
         {children}
+        <FloatingActions /> {/* Os botões flutuantes aparecerão aqui */}
         <Analytics />
       </body>
     </html>
