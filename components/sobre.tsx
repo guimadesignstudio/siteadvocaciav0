@@ -45,8 +45,6 @@ export function Sobre() {
 
   return (
     <section ref={sectionRef} id="sobre" className="py-20 lg:py-28 bg-white relative overflow-hidden">
-      {/* Elementos de sombreamento removidos para limpeza visual */}
-      
       <div className="container mx-auto px-4 lg:px-8 relative max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
@@ -64,7 +62,7 @@ export function Sobre() {
                 e Gestão pela Faculdade Legale Educacional.
               </p>
               <p>
-                Complementa sua formation com curso de extensão em Direito Imobiliário pela EMERJ, 
+                Complementa sua formação com curso de extensão em Direito Imobiliário pela EMERJ, 
                 além de especialização em DPO, LGPD e Direito Digital pela ESA/RJ. Prática orientada 
                 por análise estratégica e busca de soluções eficientes.
               </p>
@@ -73,7 +71,7 @@ export function Sobre() {
               </p>
             </div>
 
-            {/* Diferenciais - Espaçamento reduzido entre ícone e texto */}
+            {/* Diferenciais */}
             <div className={`flex flex-wrap gap-6 lg:gap-8 ${isVisible ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'}`}>
               {features.map((feature, index) => (
                 <div key={index} className="flex-1 min-w-[140px] group text-center lg:text-left">
@@ -92,8 +90,7 @@ export function Sobre() {
             <div className="relative z-10">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg w-full max-w-md mx-auto lg:mx-0">
                 <Image
-                  // A ALTERAÇÃO ESTÁ AQUI 👇
-                  src="/images/draesttela2.png" 
+                  src="/images/draesttela2.png"
                   alt="Dra. Esttela Guimarães - Advogada"
                   width={600}
                   height={750}
@@ -101,7 +98,7 @@ export function Sobre() {
                   priority
                 />
                 
-                {/* Overlay da Frase - Centralização e quebra corrigida */}
+                {/* Overlay da Frase - CENTRALIZADO NO MEIO */}
                 <div className="absolute inset-0 bg-navy/60 flex flex-col justify-center items-center text-center p-8">
                   <div className="max-w-[280px]">
                     <p className="font-serif text-base md:text-lg text-white italic leading-snug mb-4">
@@ -114,7 +111,7 @@ export function Sobre() {
                 </div>
               </div>
               
-              {/* Molduras Decorativas (Sem blur) */}
+              {/* Molduras Decorativas */}
               <div className="absolute -top-4 -right-4 w-32 h-32 border-2 border-gold/30 rounded-2xl -z-10" />
               <div className="absolute -bottom-4 -left-4 w-40 h-40 bg-gold/10 rounded-2xl -z-10" />
             </div>
