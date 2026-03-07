@@ -55,9 +55,9 @@ export function Header() {
             <Image
               src="/images/logo.png"
               alt="Esttela Guimarães Advocacia"
-              width={2500}
-              height={2500}
-              className="w-20 h-20 lg:w-24 lg:h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+              width={500}
+              height={500}
+              className="w-40 h-40 lg:w-24 lg:h-24 object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
