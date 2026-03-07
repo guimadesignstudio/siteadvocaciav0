@@ -64,7 +64,7 @@ export function Sobre() {
                 e Gestão pela Faculdade Legale Educacional.
               </p>
               <p>
-                Complementa sua formação com curso de extensão em Direito Imobiliário pela EMERJ, 
+                Complementa sua formation com curso de extensão em Direito Imobiliário pela EMERJ, 
                 além de especialização em DPO, LGPD e Direito Digital pela ESA/RJ. Prática orientada 
                 por análise estratégica e busca de soluções eficientes.
               </p>
@@ -92,7 +92,8 @@ export function Sobre() {
             <div className="relative z-10">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg w-full max-w-md mx-auto lg:mx-0">
                 <Image
-                  src="/images/dra-esttela-nova-2.png"
+                  // A ALTERAÇÃO ESTÁ AQUI 👇
+                  src="/images/draesttela2.png" 
                   alt="Dra. Esttela Guimarães - Advogada"
                   width={600}
                   height={750}
