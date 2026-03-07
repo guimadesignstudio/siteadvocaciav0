@@ -90,7 +90,7 @@ export function Sobre() {
             <div className="relative z-10">
               <div className="relative rounded-2xl overflow-hidden shadow-elegant-lg w-full max-w-md mx-auto lg:mx-0">
                 <Image
-                  src="/images/draesttela2.png"
+                  src="/images/draesttela3.png"
                   alt="Dra. Esttela Guimarães - Advogada"
                   width={600}
                   height={750}
@@ -98,8 +98,8 @@ export function Sobre() {
                   priority
                 />
                 
-                {/* Overlay da Frase - CENTRALIZADO NO MEIO */}
-                <div className="absolute inset-0 bg-navy/60 flex flex-col justify-center items-center text-center p-8">
+                {/* Overlay da Frase - Centralizado Vertical e Horizontalmente */}
+                <div className="absolute inset-0 bg-navy/60 flex flex-col justify-center items-center text-center px-6 py-8">
                   <div className="max-w-[280px]">
                     <p className="font-serif text-base md:text-lg text-white italic leading-snug mb-4">
                       "A verdadeira justiça começa com a escuta atenta e o compromisso com quem confia em nós."
