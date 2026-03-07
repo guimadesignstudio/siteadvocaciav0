@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from '@vercel analytics/next'
 import { FloatingActions } from "@/components/floating-actions"
 import './globals.css'
 
@@ -20,8 +20,10 @@ export const metadata: Metadata = {
   title: 'Esttela Guimarães Advocacia | Escritório de Advocacia',
   description: 'Advocacia com excelência e dedicação. Atendimento jurídico personalizado em diversas áreas do direito.',
   generator: 'v0.app',
-  // A seção 'icons' foi removida para que o Next.js use automaticamente 
-  // os arquivos icon.png e apple-icon.png que você subir na pasta /app
+  icons: {
+    icon: '/icon.png', // Aponta para public/icon.png
+    apple: '/apple-icon.png', // Aponta para public/apple-icon.png
+  },
 }
 
 export default function RootLayout({
