@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     icon: '/icon.png',
     apple: '/apple-icon.png',
   },
+  // Configuração para a imagem aparecer no WhatsApp e redes sociais
+  openGraph: {
+    title: 'Esttela Guimarães Advocacia',
+    description: 'Advocacia com excelência e dedicação.',
+    url: 'https://esttelaguimaraes.adv.br',
+    siteName: 'Esttela Guimarães Advocacia',
+    images: [
+      {
+        url: 'https://esttelaguimaraes.adv.br/apple-icon.png', // Usando o ícone maior da sua pasta public
+        width: 180,
+        height: 180,
+        alt: 'Logo Esttela Guimarães Advocacia',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
