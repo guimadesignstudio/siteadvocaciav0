@@ -101,7 +101,7 @@ export function Sobre() {
                 />
                 
                 {/* Overlay da Frase - Centralização e quebra corrigida */}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent flex flex-col justify-end items-center text-center p-8 pb-12">
+                <div className="absolute inset-0 bg-navy/60 flex flex-col justify-center items-center text-center p-8">
                   <div className="max-w-[280px]">
                     <p className="font-serif text-base md:text-lg text-white italic leading-snug mb-4">
                       "A verdadeira justiça começa com a escuta atenta e o compromisso com quem confia em nós."
